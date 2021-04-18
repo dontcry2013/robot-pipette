@@ -28,7 +28,7 @@ export default (props) => {
     }
     const commands = handleText(state.textareaVal);
     setState({...state, commands});
-  }, [state, state.textareaVal])
+  }, [state.textareaVal])
 
   return (
     <div className="panel">
