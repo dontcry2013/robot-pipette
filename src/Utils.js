@@ -12,7 +12,7 @@ export const stringToCoordinate = (str) => {
   let coordinate;
   if (typeof str === 'string' || str instanceof String) {
     const arr = str.split(',');
-    coordinate = (arr.length == 2) ? { x: +arr[0], y: +arr[1] } : null;
+    coordinate = (arr.length === 2) ? { x: +arr[0], y: +arr[1] } : null;
   }
   return coordinate;
 }
@@ -56,7 +56,7 @@ export const handleMove = (current, direction, col, row) => {
 export const handleDetect = (squares, index) => {
   let message;
   try {
-    if (squares[index] == "X") {
+    if (squares[index] === "X") {
       message = 'FULL';
     } else {
       message = 'EMPTY';

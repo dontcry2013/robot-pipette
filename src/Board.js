@@ -24,7 +24,7 @@ const Board = (props) => {
       <Square
         key={i}
         position={i}
-        hoverClass={i == props.current ? 'square--green': null}
+        hoverClass={i === props.current ? 'square--green': null}
         value={props.squares[i]}
       />
     );

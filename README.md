@@ -5,6 +5,8 @@
 
 ## Homepage
 
+https://dontcry2013.github.io/robot-pipette/
 
 ## Repo
 
+https://github.com/dontcry2013/robot-pipette
