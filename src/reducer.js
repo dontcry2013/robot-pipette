@@ -4,11 +4,10 @@ import {
   handleMove,
   handleDetect,
   handleReport,
+  ROW, COL,
 } from './Utils';
 
-const ROW = 5;
-const COL = 5;
-const initialState = {
+export const initialState = {
   row: ROW,
   col: COL,
   squares: Array(ROW * COL).fill(null),
@@ -17,7 +16,7 @@ const initialState = {
   textareaVal: ``,
 }
 
-const commandsReducer = (state, action) => {
+export const commandsReducer = (state, action) => {
   switch (action.type) {
     case 'primingPlate':
       return { ...state, squares: action.squares };

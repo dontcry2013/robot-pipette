@@ -5,10 +5,8 @@ import {
   handleMove,
   handleDetect,
   handleReport,
+  COL, ROW,
 } from "../Utils";
-
-const COL = 5;
-const ROW = 5;
 
 describe("indexToCoordinate Test", () => {
   test("should return expected value", () => {

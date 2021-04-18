@@ -1,4 +1,5 @@
-const COL = 5, ROW = 5;
+export const COL = 5;
+export const ROW = 5;
 
 export const indexToCoordinate = (index, col = COL) => {
   let ret = null;
