@@ -19,6 +19,8 @@ const initialState = {
 
 const commandsReducer = (state, action) => {
   switch (action.type) {
+    case 'primingPlate':
+      return { ...state, squares: action.squares };
     case 'setCommands':
       return { ...state, commands: action.commands, output: [] };
     case 'PLACE':
